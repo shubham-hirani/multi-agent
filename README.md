@@ -59,9 +59,11 @@ You can modify the user query in `main.py` to test different scenarios:
 # In main.py
 # Example query for the weather agent
 content = "What is the weather like in London?"
+Output = The current weather in London is overcast with clouds, a temperature of around 21.5°C, 36% humidity, and a gentle wind speed of about 6 meters per second.
 
 # Example query for the math agent
 content = "What is 12 times 5?"
+Output = 12 times 5 equals 60.
 ```
 
 ## Project Structure
