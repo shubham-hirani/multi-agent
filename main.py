@@ -34,18 +34,20 @@ if __name__ == "__main__":
     # Save to file
     with open("flow.png", "wb") as f:
         f.write(png_bytes)
-
-    print("✅ Flow graph saved as flow.png")
-    display(Image(supervisor.get_graph().draw_mermaid_png()))
-
-    for chunk in supervisor.stream(
-        {
+    print("Flow graph saved as flow.png")
+    user_question = input("User question: ")
+    user_input = {
             "messages": [
                 {
                     "role": "user",
-                    "content": "who is president of USA?",
+                    "content": user_question,
                 }
             ]
         }
-    ):
-        pretty_print_messages(chunk, last_message=True)
+
+    # If you  want to understand the flow of the agent handover uncomment below 2 line and comment last 2 line
+    # for chunk in supervisor.stream(user_input):
+    #     pretty_print_messages(chunk, last_message=True)
+
+    result = supervisor.invoke(user_input)
+    print(result["messages"][-1].content)
