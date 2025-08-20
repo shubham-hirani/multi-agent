@@ -1,5 +1,4 @@
 # Multi-Agent System with LangGraph
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/shubham-hirani/multi-agent)
 
 This project demonstrates a multi-agent system built with Python using LangChain and LangGraph. It features a supervisor agent that intelligently routes user requests to specialized agents—one for mathematical calculations and another for fetching weather data.
 
