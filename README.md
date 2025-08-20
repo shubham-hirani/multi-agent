@@ -40,6 +40,7 @@ Follow these steps to set up and run the project locally.
     OPENAI_API_KEY=your_openai_api_key
     OPENWEATHER_API_KEY=your_openweather_api_key
     ```
+    You can get an API key of openweather by creating account in openweather platform - https://home.openweathermap.org/users/sign_in
 
 ## Usage
 
